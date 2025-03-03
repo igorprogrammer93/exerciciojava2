@@ -1,0 +1,14 @@
+Programação Procedural
+
+    Como funciona: Imagina que você vai seguir uma receita de bolo. Na programação procedural, você cria um passo a passo (procedimentos ou funções) para resolver um problema. Cada função faz algo específico: mistura os ingredientes, assa o bolo, etc.
+    Características:
+        Baseada em funções: O foco está em o que o programa deve fazer.
+        Código sequencial: As funções são chamadas uma após a outra.
+
+Como funciona: Agora pensa que em vez de só seguir a receita, você tem "objetos" como a batedeira (que mistura) e o forno (que assa). Cada objeto tem suas próprias funções e características (métodos e atributos).
+Características:
+
+    Baseada em objetos: O foco está em quem faz as coisas e como eles fazem.
+    Organização: O código fica mais organizado, facilitando a reutilização.
+    Pilares: Tem conceitos como herança, polimorfismo, encapsulamento e abstração.
+

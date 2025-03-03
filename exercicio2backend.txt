@@ -1,0 +1,50 @@
+Antigamente: Páginas em JSP (JavaServer Pages)
+
+    O que é: JSP é uma tecnologia Java usada para criar páginas web dinâmicas. Era comum em aplicações Java EE.
+    Como funcionava: O código Java era misturado diretamente com HTML dentro do mesmo arquivo (.jsp). O servidor processava esse código Java no backend, gerava o HTML e enviava para o navegador.
+    Exemplo Simples:
+
+<%@ page language="java" contentType="text/html; charset=UTF-8" %>
+<html>
+<body>
+<%
+    String nome = "João";
+%>
+<h1>Bem-vindo, <%= nome %>!</h1>
+</body>
+</html>
+
+O que acontece: O servidor Java lê o código, processa <%= nome %>, gera o HTML com o nome "João" e envia para o navegador.
+
+🆕 Hoje em Dia: Páginas com Angular
+
+    O que é: Angular é um framework JavaScript usado para construir aplicações web modernas no frontend, sem misturar código backend.
+    Como funciona: O Angular usa componentes, TypeScript e uma comunicação com APIs para buscar dados, deixando o backend separado. A renderização acontece no navegador do usuário.
+    Exemplo Simples:
+ 
+HTML (app.component.html):
+
+<h1>Bem-vindo, {{ nome }}!</h1>
+
+TypeScript (app.component.ts):
+
+export class AppComponent {
+  nome = 'João';
+}
+
+O que acontece: O navegador interpreta o Angular, substitui {{ nome }} por "João" diretamente no lado do cliente, sem precisar que o servidor gere o HTML.
+⚖️ Diferenças Simples: JSP vs. Angular
+
+    Local de processamento:
+        JSP: No servidor (backend).
+        Angular: No navegador (frontend).
+
+    Mistura de código:
+        JSP: Mistura HTML e Java no mesmo arquivo.
+        Angular: Separa HTML, CSS e lógica (TypeScript).
+
+    Experiência do usuário:
+        JSP: Recarrega a página inteira para cada ação.
+        Angular: Atualiza apenas partes necessárias (Single Page Application).
+
+Resumo: JSP era focado no backend, misturando Java com HTML. Angular foca no frontend, mantendo código organizado e melhorando a experiência do usuário com atualizações rápidas. 🚀
